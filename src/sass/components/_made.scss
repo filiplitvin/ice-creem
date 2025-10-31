@@ -1,0 +1,109 @@
+.made__container {
+  background-color: $colorBgPrimary;
+  // position: relative;
+  // background-image: url(../images/made-bg-milk.svg);
+  // background-repeat: no-repeat;
+  // top: 0px;
+  // right: 0;
+}
+.made__secondtitle {
+  font-family: $second-family;
+  //   ======nepravilniq rozmir======
+  font-weight: 800;
+  font-size: 18px;
+  text-transform: uppercase;
+  text-align: center;
+  color: #ffa5ba;
+  margin-bottom: 15px;
+}
+.made__title {
+  font-family: $second-family;
+  // ======nepravilniq rozmir======
+  font-weight: 800;
+  font-size: 34px;
+  letter-spacing: 0.04em;
+  //   ======nepravilniq line-height======
+  line-height: 0.87;
+  text-transform: uppercase;
+  text-align: center;
+  color: $colorTextTitle;
+  margin-bottom: 26px;
+}
+.made__foto {
+  height: 279px;
+  width: 280px;
+  margin-inline: auto;
+  margin-bottom: 46px;
+}
+// .made-text-container {
+//   padding-inline: -20px;
+// }\
+.made__text--container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.made__text--1 {
+  font-family: $font-family;
+  font-size: 12px;
+  line-height: 1.62;
+  color: $colorTextSecondary;
+  padding-inline: 30px;
+  margin-bottom: 47px;
+}
+.made__text--2 {
+  font-family: var(--font-family);
+  font-size: 12px;
+  line-height: 1.62;
+  color: $colorTextThirthry;
+  padding-inline: 30px;
+  margin-bottom: 47px;
+  position: relative;
+  background-image: url(../images/made-img/made-bg-milk.svg);
+  background-repeat: no-repeat;
+  top: 0;
+  right: 0;
+}
+.made__button {
+  font-family: $font-family;
+  font-weight: 700;
+  text-align: center;
+  color: $colorTextTitle;
+  margin-bottom: 39px;
+  margin-left: 67px;
+  margin-right: 100px;
+}
+// .made-button::after {
+//   content: '';
+//   position: relative;
+//   background-image: url(../images/made-img/strilka.png);
+//   background-repeat: no-repeat;
+//   top: 0;
+//   right: 0;
+// }
+.made__svg {
+  fill: $colorTextTitle;
+  width: 5px;
+  height: 8px;
+}
+.made__list {
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+}
+.made__item--title {
+  font-family: $font-family;
+  font-weight: 800;
+  font-size: 36px;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  color: $colorTextTitle;
+}
+.made__item--text {
+  font-family: $font-family;
+  font-weight: 700;
+  font-size: 12px;
+  line-height: 1.7;
+  color: $colorTextSecondary;
+}

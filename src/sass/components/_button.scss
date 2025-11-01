@@ -1,0 +1,39 @@
+.btn-container {
+  display: flex;
+  justify-content: center;
+}
+
+.btn-div {
+  display: flex;
+  gap: 10px;
+  z-index: 2;
+}
+
+.button {
+  border-radius: 22px;
+  cursor: pointer;
+  border: none;
+  color: $colorTextTitle;
+  font-family: var(--font-family);
+  font-weight: 400;
+  z-index: 2;
+  width: 209px;
+  height: 44px;
+
+  &--primary {
+    background-color: $colorTextTitle;
+    color: #fff;
+    width: 62px;
+    height: 24px;
+    font-size: 8px;
+  }
+
+  &--secondary {
+    background-color: $colorTextPrimery;
+    color: $colorTextTitle;
+    width: 82px;
+    height: 24px;
+    font-size: 8px;
+  }
+}
+

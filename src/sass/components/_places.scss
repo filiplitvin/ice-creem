@@ -1,5 +1,6 @@
 .places {
   background-color: #fff5f6;
+  padding-bottom: 113px;
 }
 // не контейнер
 .places__container {
@@ -143,6 +144,9 @@
   margin-left: 8px;
 }
 @media (min-width: 768px) {
+  .places {
+    padding-bottom: 158px;
+  }
   .places__container {
     padding-top: 51px;
     padding-bottom: 61px;
@@ -203,6 +207,7 @@
     background-image: url(../images/bg.svg);
     background-size: contain;
     background-repeat: no-repeat;
+    padding-bottom: 168px;
   }
   .places__list {
     display: flex;

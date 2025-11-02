@@ -142,3 +142,91 @@
   height: 10px;
   margin-left: 8px;
 }
+@media (min-width: 768px) {
+  .places__container {
+    padding-top: 51px;
+    padding-bottom: 61px;
+  }
+  .places__list {
+    display: flex;
+    flex-direction: row;
+  }
+  .places__title {
+    font-size: 16px;
+    width: 73px;
+  }
+  .places__title--foodtruck {
+    width: 138px;
+    font-size: 16px;
+  }
+  .places__text {
+    width: 145px;
+    font-size: 16px;
+  }
+  .places__text::after {
+    width: 157px;
+  }
+  .places__grafic::after {
+    width: 157px;
+  }
+  .places__type {
+    font-size: 16px;
+  }
+  .places__days {
+    font-size: 16px;
+  }
+  .palces__time {
+    font-size: 16px;
+  }
+  .phone {
+    font-size: 16px;
+  }
+  .email {
+    font-size: 16px;
+  }
+  .button__list {
+    display: flex;
+    flex-direction: row;
+    padding-top: 81px;
+  }
+  .location {
+    padding-left: 32px;
+    padding-right: 32px;
+  }
+  .franchise {
+    padding-left: 38px;
+    padding-right: 38px;
+  }
+}
+@media (min-width: 1200px) {
+  .places {
+    background-image: url(../images/bg.svg);
+    background-size: contain;
+    background-repeat: no-repeat;
+  }
+  .places__list {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .places__item {
+    min-width: 330px;
+  }
+  .places__text {
+    width: 243px;
+  }
+  .places__text::after {
+    width: 243px;
+  }
+  .places__grafic::after {
+    width: 243px;
+  }
+  .location {
+    padding-left: 35px;
+    padding-right: 35px;
+  }
+  .franchise {
+    padding-left: 39px;
+    padding-right: 39px;
+  }
+}

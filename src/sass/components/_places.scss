@@ -1,5 +1,6 @@
 .places {
   background-color: #fff5f6;
+  padding-bottom: 113px;
 }
 
 .places__container {
@@ -143,6 +144,9 @@
   margin-left: 8px;
 }
 @media (min-width: 768px) {
+  .places {
+    padding-bottom: 158px;
+  }
   .places__container {
     padding-top: 51px;
     padding-bottom: 61px;
@@ -154,6 +158,7 @@
   .places__title {
     font-size: 16px;
     width: 73px;
+    text-align: center;
   }
   .places__title--foodtruck {
     width: 138px;
@@ -203,6 +208,7 @@
     background-image: url(../images/bg.svg);
     background-size: contain;
     background-repeat: no-repeat;
+    padding-bottom: 168px;
   }
   .places__list {
     display: flex;
@@ -211,6 +217,9 @@
   }
   .places__item {
     min-width: 330px;
+  }
+  .places__title {
+    text-align: center;
   }
   .places__text {
     width: 243px;

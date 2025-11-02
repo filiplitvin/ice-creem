@@ -22,6 +22,7 @@
   left: 0;
   transition: 0.5s linear;
   transition-property: top, transform;
+  z-index: 0;
 }
 
 .menu-btn::before {
@@ -38,6 +39,7 @@
   &::before {
     top: calc(50% - 1px);
     transform: rotate(-45deg);
+    background-color: #fff; 
   }
   .menu-btn__line {
     transform-origin: top;
@@ -46,6 +48,7 @@
   &::after {
     top: calc(50% - 1px);
     transform: rotate(45deg);
+    background-color: #fff; 
   }
 }
 

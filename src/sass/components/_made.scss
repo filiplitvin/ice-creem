@@ -1,10 +1,9 @@
-.made__container {
+.made {
+  background-image: url(../images/made/made-bg-milk.svg);
+  background-repeat: no-repeat;
+  background-position: 0 50%;
+  background-size: contain;
   background-color: $colorBgPrimary;
-  // position: relative;
-  // background-image: url(../images/made-bg-milk.svg);
-  // background-repeat: no-repeat;
-  // top: 0px;
-  // right: 0;
 }
 .made__secondtitle {
   font-family: $second-family;
@@ -19,11 +18,11 @@
 .made__title {
   font-family: $second-family;
   // ======nepravilniq rozmir======
-  font-weight: 800;
+  font-weight: 400;
   font-size: 34px;
   letter-spacing: 0.04em;
   //   ======nepravilniq line-height======
-  line-height: 0.87;
+  line-height: 1.1;
   text-transform: uppercase;
   text-align: center;
   color: $colorTextTitle;
@@ -59,29 +58,54 @@
   color: $colorTextThirthry;
   padding-inline: 30px;
   margin-bottom: 47px;
-  position: relative;
-  background-image: url(../images/made-img/made-bg-milk.svg);
-  background-repeat: no-repeat;
-  top: 0;
-  right: 0;
 }
+// .made__button {
+//   font-family: $font-family;
+//   font-weight: 700;
+//   text-align: center;
+//   color: $colorTextTitle;
+//   margin-bottom: 39px;
+//   padding-right: 20px;
+//   // margin-left: 67px;
+//   // margin-right: 100px;
+// }
+// .made__button::after {
+//   content: '';
+//   background-image: url(../images/made/strilka.png);
+//   background-repeat: no-repeat;
+//   display: block;
+//   background-size: contain;
+//   width: 5px;
+//   height: 8px;
+//   top: 0;
+//   left: 0;
+// }
 .made__button {
+  border-radius: 22px;
+  cursor: pointer;
+  border: none;
+  color: $colorTextTitle;
   font-family: $font-family;
   font-weight: 700;
+  font-size: 16px;
   text-align: center;
-  color: $colorTextTitle;
-  margin-bottom: 39px;
-  margin-left: 67px;
-  margin-right: 100px;
+  position: relative;
+  padding-left: 25%;
+
+  &::after {
+    content: '';
+    position: absolute;
+    right: 15px;
+    top: 52%;
+    transform: translateY(-50%);
+    width: 5px;
+    height: 6px;
+    background-image: url('../images/made/strilka.png');
+    background-repeat: no-repeat;
+    background-size: contain;
+    left: 100%;
+  }
 }
-// .made-button::after {
-//   content: '';
-//   position: relative;
-//   background-image: url(../images/made-img/strilka.png);
-//   background-repeat: no-repeat;
-//   top: 0;
-//   right: 0;
-// }
 .made__svg {
   fill: $colorTextTitle;
   width: 5px;
@@ -91,10 +115,41 @@
   display: flex;
   flex-direction: column;
   justify-content: start;
+  row-gap: 38px;
+}
+.made__item--first::before {
+  content: '';
+  background-image: url(../images/made/icon-milking.webp);
+  background-repeat: no-repeat;
+  display: block;
+  width: 33px;
+  height: 50px;
+  background-size: contain;
+  background-position: center;
+}
+.made__item--second::before {
+  content: '';
+  background-image: url(../images/made/icon-apple.webp);
+  background-repeat: no-repeat;
+  display: block;
+  width: 50px;
+  height: 50px;
+  background-size: contain;
+  background-position: center;
+}
+.made__item--third::before {
+  content: '';
+  background-image: url(../images/made/icon-heart.webp);
+  background-repeat: no-repeat;
+  display: block;
+  width: 44px;
+  height: 50px;
+  background-size: contain;
+  background-position: center;
 }
 .made__item--title {
-  font-family: $font-family;
-  font-weight: 800;
+  font-family: $second-family;
+  font-weight: 400;
   font-size: 36px;
   letter-spacing: 0.04em;
   text-transform: uppercase;

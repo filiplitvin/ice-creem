@@ -34,9 +34,6 @@
   margin-inline: auto;
   margin-bottom: 46px;
 }
-// .made-text-container {
-//   padding-inline: -20px;
-// }\
 .made__text--container {
   display: flex;
   flex-direction: column;
@@ -59,51 +56,30 @@
   padding-inline: 30px;
   margin-bottom: 47px;
 }
-// .made__button {
-//   font-family: $font-family;
-//   font-weight: 700;
-//   text-align: center;
-//   color: $colorTextTitle;
-//   margin-bottom: 39px;
-//   padding-right: 20px;
-//   // margin-left: 67px;
-//   // margin-right: 100px;
-// }
-// .made__button::after {
-//   content: '';
-//   background-image: url(../images/made/strilka.png);
-//   background-repeat: no-repeat;
-//   display: block;
-//   background-size: contain;
-//   width: 5px;
-//   height: 8px;
-//   top: 0;
-//   left: 0;
-// }
 .made__button {
   border-radius: 22px;
-  cursor: pointer;
-  border: none;
+  background-color: $colorTextPrimery;
   color: $colorTextTitle;
   font-family: $font-family;
   font-weight: 700;
   font-size: 16px;
   text-align: center;
   position: relative;
-  padding-left: 25%;
-
+  text-align: center;
+  padding: 10px 56px 10px 37px;
+  margin-left: 30px;
+  margin-bottom: 39px;
   &::after {
     content: '';
     position: absolute;
     right: 15px;
-    top: 52%;
-    transform: translateY(-50%);
-    width: 5px;
-    height: 6px;
+    top: 40%;
+    width: 6px;
+    height: 10px;
     background-image: url('../images/made/strilka.png');
     background-repeat: no-repeat;
     background-size: contain;
-    left: 100%;
+    left: 75%;
   }
 }
 .made__svg {
@@ -162,3 +138,12 @@
   line-height: 1.7;
   color: $colorTextSecondary;
 }
+/* ====== Tablet ====== */
+// @media (min-width: 480px) and (max-width: 768px) {
+//   .made{
+
+//   }
+// }
+/* ======== Desktop ======= */
+// @media (min-width: 768px) {
+// }

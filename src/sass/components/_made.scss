@@ -4,6 +4,8 @@
   background-position: 0 50%;
   background-size: contain;
   background-color: $colorBgPrimary;
+  margin-bottom: 97px;
+  padding-top: 125px;
 }
 .made__secondtitle {
   font-family: $second-family;
@@ -38,7 +40,7 @@
   display: flex;
   flex-direction: column;
   justify-content: center;
-  align-items: center;
+  // align-items: center;
 }
 .made__text--1 {
   font-family: $font-family;
@@ -54,7 +56,15 @@
   line-height: 1.62;
   color: $colorTextThirthry;
   padding-inline: 30px;
-  margin-bottom: 47px;
+  margin-bottom: 15px;
+}
+.made__text--3 {
+  font-family: var(--font-family);
+  font-size: 12px;
+  line-height: 1.62;
+  color: $colorTextThirthry;
+  padding-inline: 30px;
+  margin-bottom: 25px;
 }
 .made__button {
   border-radius: 22px;
@@ -67,8 +77,10 @@
   position: relative;
   text-align: center;
   padding: 10px 56px 10px 37px;
-  margin-left: 30px;
+  width: 176px;
+  // margin-left: 30px;
   margin-bottom: 39px;
+  margin-left: 30px;
   &::after {
     content: '';
     position: absolute;
@@ -128,7 +140,6 @@
   font-weight: 400;
   font-size: 36px;
   letter-spacing: 0.04em;
-  text-transform: uppercase;
   color: $colorTextTitle;
 }
 .made__item--text {
@@ -139,11 +150,148 @@
   color: $colorTextSecondary;
 }
 /* ====== Tablet ====== */
-// @media (min-width: 480px) and (max-width: 768px) {
-//   .made{
-
-//   }
-// }
+@media (min-width: 480px) and (max-width: 768px) {
+  .made {
+    padding-inline: 16px;
+    background-image: none;
+    padding-top: 130px;
+    margin-bottom: 140px;
+  }
+  .made__container--fototext {
+    display: flex;
+    align-items: flex-start;
+    max-height: 439px;
+    margin-bottom: 56px;
+    gap: 17px;
+  }
+  .made__foto {
+    height: 339px;
+    width: 340px;
+    margin-bottom: 0px;
+    margin-inline: 0px;
+  }
+  .made__text--1 {
+    max-height: 79px;
+    max-width: 340px;
+    padding-inline: 0px;
+    margin-bottom: 40px;
+    margin-top: 50px;
+    font-size: 14px;
+    line-height: 1.76;
+  }
+  .made__text--2 {
+    max-height: 155px;
+    max-width: 340px;
+    padding-inline: 0px;
+    margin-bottom: 0px;
+    font-size: 14px;
+    line-height: 1.76;
+    letter-spacing: 0.04em;
+    margin-bottom: 5px;
+  }
+  .made__text--3 {
+    max-width: 340px;
+    padding-inline: 0px;
+    margin-bottom: 0px;
+    font-size: 14px;
+    line-height: 1.76;
+    letter-spacing: 0.04em;
+    margin-bottom: 62px;
+  }
+  .made__button {
+    width: 176px;
+    margin-bottom: 66px;
+    margin-left: 0px;
+  }
+  .made__list {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 60px;
+  }
+  .made__item {
+    width: 180px;
+    height: 228px;
+  }
+  .made__item--title {
+    font-size: 48px;
+  }
+  .made__item--text {
+    font-size: 14px;
+    line-height: 1.74;
+  }
+}
 /* ======== Desktop ======= */
-// @media (min-width: 768px) {
-// }
+@media (min-width: 768px) {
+  .made {
+    padding-inline: 96px;
+    padding-top: 125px;
+    margin-bottom: 139px;
+    background-position: 0 250px;
+  }
+  .made__container--fototext {
+    display: flex;
+    align-items: flex-start;
+    margin-bottom: 39px;
+    gap: 74px;
+  }
+  .made__foto {
+    height: 516px;
+    width: 516px;
+    margin-bottom: 0px;
+    margin-inline: 0px;
+  }
+  .made__text--1 {
+    max-height: 79px;
+    max-width: 463px;
+    padding-inline: 0px;
+    margin-bottom: 40px;
+    margin-top: 50px;
+    font-size: 16px;
+    line-height: 1.76;
+  }
+  .made__text--2 {
+    max-height: 155px;
+    max-width: 463px;
+    padding-inline: 0px;
+    margin-bottom: 0px;
+    font-size: 14px;
+    line-height: 1.94;
+    letter-spacing: 0.04em;
+    margin-bottom: 15px;
+  }
+  .made__text--3 {
+    max-height: 155px;
+    max-width: 463px;
+    padding-inline: 0px;
+    margin-bottom: 0px;
+    font-size: 14px;
+    line-height: 1.94;
+    letter-spacing: 0.04em;
+  }
+  .made__button {
+    width: 176px;
+    margin-top: 45px;
+    margin-left: 0px;
+  }
+  .made__list {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 30px;
+  }
+  .made__item {
+    width: 330px;
+    height: 222px;
+  }
+  .made__item--title {
+    font-size: 58px;
+  }
+  .made__item--text {
+    font-size: 16px;
+    line-height: 1.76;
+    letter-spacing: 0.02em;
+  }
+}

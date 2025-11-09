@@ -78,9 +78,17 @@
   text-align: center;
   padding: 10px 56px 10px 37px;
   width: 176px;
-  // margin-left: 30px;
   margin-bottom: 39px;
   margin-left: 30px;
+  cursor: pointer;
+  position: relative;
+  border-radius: 34px;
+  background-color: transparent;
+  // transition: all 0.3s cubic-bezier(0.23, 1, 0.32, 1);
+  overflow: hidden;
+  transition-property: transform, opacity, box-shadow;
+  transition-duration: 0.25s;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   &::after {
     content: '';
     position: absolute;
@@ -93,6 +101,31 @@
     background-size: contain;
     left: 75%;
   }
+}
+.made__button:hover {
+  transform: scale(1.1);
+  opacity: 80%;
+  color: $colorTextPrimery;
+  border: 2px solid $colorTextTitle;
+}
+.made__button::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  margin: auto;
+  width: 60px;
+  height: 60px;
+  border-radius: inherit;
+  scale: 0;
+  z-index: -1;
+  background-color: $colorTextTitle;
+  transition: all 0.6s cubic-bezier(0.23, 1, 0.32, 1);
+}
+.made__button:hover::before {
+  scale: 3;
+}
+.made__button:hover::after {
+  background-image: url('../images/made/strilka2.png');
 }
 .made__svg {
   fill: $colorTextTitle;
@@ -199,7 +232,7 @@
     margin-bottom: 62px;
   }
   .made__button {
-    width: 176px;
+    max-width: 176px;
     margin-bottom: 66px;
     margin-left: 0px;
   }
@@ -211,8 +244,8 @@
     gap: 60px;
   }
   .made__item {
-    width: 180px;
-    height: 228px;
+    max-width: 180px;
+    max-height: 228px;
   }
   .made__item--title {
     font-size: 48px;
@@ -271,7 +304,7 @@
     letter-spacing: 0.04em;
   }
   .made__button {
-    width: 176px;
+    max-width: 176px;
     margin-top: 45px;
     margin-left: 0px;
   }
@@ -283,8 +316,8 @@
     gap: 30px;
   }
   .made__item {
-    width: 330px;
-    height: 222px;
+    max-width: 330px;
+    max-height: 222px;
   }
   .made__item--title {
     font-size: 58px;

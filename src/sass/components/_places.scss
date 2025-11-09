@@ -22,6 +22,12 @@
   background-color: $colorTextPrimery;
   border-radius: 24px;
   box-shadow: 0px 4px 4px 0px #00000025;
+  transition-property: box-shadow;
+  transition-duration: 250ms;
+  transition-timing-function: ease;
+  &:hover {
+    box-shadow: 1px 5px 5px 1px #00000025;
+  }
 }
 .places__info {
   width: 179px;
@@ -51,6 +57,7 @@
   font-weight: 500;
   border-radius: 24px;
   text-align: center;
+  font-family: $font-family;
 }
 .places__title--foodtruck {
   width: 130px;
@@ -63,8 +70,10 @@
 .places__type {
   margin-top: 25px;
   font-size: 12px;
-  font-weight: 400;
+  font-weight: 500;
   color: #000000;
+  font-family: $font-family;
+  padding-bottom: 10px;
 }
 .places__text {
   font-size: 12px;
@@ -72,6 +81,7 @@
   color: $colorTextThirthry;
   width: 179px;
   padding-bottom: 25px;
+  font-family: $font-family;
 }
 .places__text::after {
   content: '';
@@ -84,23 +94,27 @@
 
 .places__days {
   font-size: 12px;
-  font-weight: 400;
+  font-weight: 500;
   color: $colorTextSecondary;
+  font-family: $font-family;
 }
 .palces__time {
   font-size: 12px;
-  font-weight: 400;
+  font-weight: 500;
   color: $colorTextSubTitle;
+  font-family: $font-family;
 }
 .phone {
   font-size: 12px;
-  font-weight: 400;
+  font-weight: 500;
   color: $colorTextThirthry;
+  font-family: $font-family;
 }
 .email {
   font-size: 12px;
-  font-weight: 400;
+  font-weight: 500;
   color: $colorTextThirthry;
+  font-family: $font-family;
 }
 .location {
   background-color: $colorTextTitle;
@@ -112,6 +126,35 @@
   padding-bottom: 16px;
   display: flex;
   align-items: center;
+
+  cursor: pointer;
+  position: relative;
+  font-size: 16px;
+  transition: all 0.3s ease;
+  overflow: hidden;
+  &:hover {
+    color: $colorTextTitle;
+    scale: 1.1;
+  }
+}
+.location::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  margin: auto;
+  width: 60px;
+  height: 60px;
+  border-radius: inherit;
+  scale: 0;
+  z-index: -1;
+  background-color: $colorBgPrimary;
+  transition: all 0.6s ease;
+}
+.location:hover::before {
+  scale: 3;
+}
+.location:active {
+  scale: 1;
 }
 .franchise {
   background-color: $colorTextPrimery;
@@ -123,6 +166,34 @@
   padding-bottom: 16px;
   display: flex;
   align-items: center;
+  cursor: pointer;
+  position: relative;
+  font-size: 16px;
+  transition: all 0.3s cubic-bezier(0.23, 1, 0.32, 1);
+  overflow: hidden;
+  &:hover {
+    color: $colorBgPrimary;
+    scale: 1.1;
+  }
+}
+.franchise::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  margin: auto;
+  width: 60px;
+  height: 60px;
+  border-radius: inherit;
+  scale: 0;
+  z-index: -1;
+  background-color: $colorTextTitle;
+  transition: all 0.6s ease;
+}
+.franchise:hover::before {
+  scale: 3;
+}
+.franchise:active {
+  scale: 1;
 }
 .button__list {
   padding-top: 54px;

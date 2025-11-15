@@ -13,16 +13,16 @@
     &::before {
       content: '';
       position: absolute;
-      bottom: 0;
-      right: 32px;
       width: 100%;
       height: 100%;
       background-image: url('../images/header/ice-cream.png');
       background-repeat: no-repeat;
-      background-position: right bottom;
+      background-position: bottom right 30px;
       background-size: auto 80%;
       z-index: 1;
+      margin-right: 30px;
     }
+
     &::after {
       content: '';
       position: absolute;
@@ -31,53 +31,516 @@
       transform: translateY(-50%);
       width: 346px;
       height: 344px;
-      border-radius: 100%;
+      border-radius: 50%;
       background: #ffa5ba;
       z-index: 0;
     }
-    .logo {
-      margin-top: 7px;
-      margin-right: 20px;
-      width: 199px;
-      height: 50px;
-    }
-    .mobile-menu {
-      position: absolute;
-      top: 25px;
-      right: 18px;
-      z-index: 3;
-    }
-    .text-sub-title {
-      display: flex;
-      flex-direction: column;
-      align-items: flex-start;
-      gap: 3px;
-      margin-top: 137px;
-      z-index: 2;
-      padding: 0;
-    }
-    .sub-title {
-      color: $colorTextPrimery;
-      font-family: var(--second-family);
-      font-weight: 400;
-      font-size: 26px;
-      letter-spacing: 0.04em;
-      text-transform: uppercase;
-      color: #fff;
-      gap: 0;
-      padding: 0;
+  }
+
+  &__logo {
+    margin-top: 11px;
+    margin-right: 20px;
+    width: 199px;
+    height: 50px;
+    z-index: 1;
+  }
+
+  &__logo-img {
+    display: block;
+    width: 100%;
+    height: auto;
+  }
+
+  &__text-group {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-top: 137px;
+    z-index: 2;
+  }
+
+  &__subtitle {
+    color: $colorTextPrimery;
+    font-family: $second-family;
+    font-weight: 400;
+    font-size: 22px;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+  }
+
+  &__title {
+    font-family: $second-family;
+    font-weight: 400;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+    font-size: 48px;
+    line-height: 90%;
+    color: $colorTextTitle;
+  }
+
+  &__btn-group {
+    display: flex;
+    z-index: 2;
+    gap: 6px;
+    position: relative;
+    margin-top: 17px;
+  }
+
+  &__btn-tablet {
+    display: none;
+    border-radius: 22px;
+    cursor: pointer;
+    border: none;
+    color: $colorTextTitle;
+    font-family: $font-family;
+    font-weight: 700;
+    font-size: 16px;
+    text-align: center;
+    z-index: 2;
+    width: 209px;
+    height: 44px;
+    position: absolute;
+    transition: 0.25s ease;
+
+    &:hover {
+      transform: scale(1.04);
+      opacity: 0.9;
     }
 
-    .title {
-      color: $colorTextPrimery;
-      font-family: var(--second-family);
-      font-weight: 400;
-      letter-spacing: 0.04em;
-      text-transform: uppercase;
-      font-size: 48px;
-      line-height: 96%;
-      color: #d41443;
-      gap: 0;
+    &::after {
+      content: '';
+      position: absolute;
+      right: 15px;
+      top: 50%;
+      transform: translateY(-50%);
+      width: 5px;
+      height: 6px;
+      background-image: url('../images/header/button-decor.png');
+      background-repeat: no-repeat;
+      background-size: contain;
     }
+  }
+
+  &__milk {
+    display: none;
+    position: absolute;
+    left: 34px;
+    bottom: 31px;
+    z-index: 2;
+
+    &::before {
+      content: '';
+      position: absolute;
+      left: 0;
+      bottom: 0;
+      background-size: contain;
+      width: 124px;
+      height: 126px;
+      background-image: url('../images/header/milk.png');
+      background-repeat: no-repeat;
+      background-size: contain;
+      z-index: 1;
+    }
+  }
+
+  &__milk-content {
+    position: relative;
+    margin-left: 154px;
+    margin-bottom: 37px;
+  }
+
+  &__milk-text {
+    color: $colorTextPrimery;
+    font-weight: 400;
+    font-size: 8px;
+    line-height: 150%;
+    margin-bottom: 7px;
+    white-space: pre-wrap;
+  }
+
+  &__milk-btn {
+    position: absolute;
+    width: 18px;
+    height: 18px;
+    border-radius: 50%;
+    background: $colorTextPrimery;
+    border: none;
+    cursor: pointer;
+    background-image: url('../images/header/icons/arrow-right.svg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 6px 6px;
+    transition: 0.25s ease;
+
+    &:hover {
+      transform: scale(1.04);
+      opacity: 0.9;
+    }
+  }
+
+  &__numbers {
+    display: none;
+    position: absolute;
+    right: 0;
+    margin-right: 34px;
+    z-index: 2;
+
+    &::after {
+      content: '';
+      position: absolute;
+      background-size: contain;
+      width: 43px;
+      height: 44px;
+      background-image: url('../images/header/16.png');
+      background-repeat: no-repeat;
+      top: 91px;
+      right: 0;
+    }
+
+    &::before {
+      content: '';
+      position: absolute;
+      background-size: contain;
+      width: 51px;
+      height: 43px;
+      background-image: url('../images/header/23.png');
+      background-repeat: no-repeat;
+      top: 148px;
+      right: 0;
+    }
+  }
+
+  &__girl {
+    display: none;
+  }
+}
+
+/* ------ BUTTONS MOBILE----------*/
+.btn-container {
+  display: flex;
+  justify-content: center;
+  margin-top: 60px;
+}
+
+.btn-div {
+  display: flex;
+  z-index: 2;
+  gap: 6px;
+  position: relative;
+  margin-top: 17px;
+}
+.button {
+  border-radius: 22px;
+  cursor: pointer;
+  border: none;
+  color: $colorTextTitle;
+  font-family: $font-family;
+  font-weight: 700;
+  font-size: 16px;
+  text-align: center;
+  z-index: 2;
+  position: relative;
+  padding-right: 68px;
+  height: 44px;
+  width: 160px;
+  transition: 0.25s ease;
+
+  &:hover {
+    transform: scale(1.04);
+    opacity: 0.9;
+  }
+
+  &::after {
+    content: '';
+    position: absolute;
+    right: 15px;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 5px;
+    height: 6px;
+    background-image: url('../images/header/button-decor.png');
+    background-repeat: no-repeat;
+    background-size: contain;
+    padding-right: 46px;
+  }
+
+  &--primary {
+    background-color: $colorTextTitle;
+    color: #fff;
+    width: 62px;
+    height: 24px;
+    font-size: 8px;
+    padding: 0;
+
+    &::before {
+      content: none;
+      background-image: none;
+      padding-right: initial;
+    }
+  }
+
+  &--secondary {
+    background-color: $colorTextPrimery;
+    color: $colorTextTitle;
+    width: 82px;
+    height: 24px;
+    font-size: 8px;
+    padding: 0;
+
+    &::before {
+      background-image: none;
+      content: none;
+      padding-right: initial;
+    }
+  }
+}
+/* ---------- MEDIA 768px ------------ */
+@media (min-width: 768px) {
+  .header {
+    &__container {
+      height: 399px;
+
+      &::before {
+        background-position: bottom right 247px;
+      }
+
+      &::after {
+        width: 324px;
+        height: 322px;
+        right: 137px;
+      }
+    }
+
+    &__logo {
+      margin-top: 34px;
+      margin-left: 34px;
+    }
+
+    &__text-group {
+      margin-top: 15px;
+      margin-left: 34px;
+    }
+
+    &__btn-tablet {
+      display: block;
+      cursor: pointer;
+      width: 160px;
+      margin-top: 38px;
+      right: 34px;
+      transition: 0.25s ease;
+
+      &:hover {
+        transform: scale(1.04);
+        opacity: 0.9;
+      }
+    }
+
+    &__btn-group {
+      margin-left: 34px;
+    }
+
+    &__milk {
+      display: block;
+    }
+
+    &__numbers {
+      display: block;
+    }
+    &__girl {
+      display: block;
+      position: absolute;
+      right: 0;
+      bottom: 0;
+      margin-right: 34px;
+      z-index: 2;
+
+      &::after {
+        content: '';
+        position: absolute;
+        background-size: contain;
+        width: 168px;
+        height: 133px;
+        background-image: url('../images/header/girl.png');
+        background-repeat: no-repeat;
+        bottom: 0;
+        right: 0;
+      }
+    }
+  }
+}
+/* ------ BUTTONS TABLET ----------*/
+@media (min-width: 768px) {
+  .buttontablet {
+    display: block;
+    width: 160px;
+    margin-top: 38px;
+    right: 34px;
+  }
+  .btn-div {
+    margin-left: 34px;
+  }
+  .button {
+    width: 186px;
+    &--primary {
+      background-color: $colorTextTitle;
+      color: #fff;
+      width: 62px;
+      height: 24px;
+      font-size: 8px;
+      padding: 0;
+
+      &::before {
+        content: none;
+        padding-right: initial;
+      }
+    }
+
+    &--secondary {
+      background-color: $colorTextPrimery;
+      color: $colorTextTitle;
+      width: 82px;
+      height: 24px;
+      font-size: 8px;
+      padding: 0;
+
+      &::before {
+        content: none;
+        padding-right: initial;
+      }
+    }
+  }
+}
+
+/* ---------- MEDIA 1200px ---------- */
+@media (min-width: 1200px) {
+  .header {
+    &__container {
+      justify-content: flex-start;
+      height: 665px;
+
+      &::before {
+        background-size: 236px 557px;
+        background-position: bottom right 450px;
+      }
+
+      &::after {
+        width: 538px;
+        height: 538px;
+        right: 267px;
+      }
+    }
+
+    &__logo {
+      margin-top: 37px;
+      margin-left: 46px;
+    }
+
+    &__text-group {
+      margin-top: 84px;
+      margin-left: 115px;
+    }
+
+    &__subtitle {
+      font-size: 38px;
+    }
+
+    &__title {
+      font-size: 58px;
+    }
+
+    &__milk {
+      left: 77px;
+
+      &::before {
+        background-size: contain;
+        width: 188px;
+        height: 191px;
+      }
+    }
+
+    &__milk-content {
+      margin-left: 218px;
+      margin-bottom: 56px;
+    }
+
+    &__milk-text {
+      font-size: 14px;
+      line-height: 140%;
+    }
+
+    &__milk-btn {
+      width: 26px;
+      height: 26px;
+      background-size: 8px 8px;
+      transition: transform 0.25s ease;
+
+      &:hover {
+        transform: scale(1.1);
+      }
+    }
+
+    &__btn-tablet {
+      width: 160px;
+      cursor: pointer;
+      margin-top: 38px;
+      right: 115px;
+      transition: 0.25s ease;
+
+      &:hover {
+        transform: scale(1.04);
+        opacity: 0.9;
+      }
+    }
+
+    &__btn-group {
+      margin-left: 115px;
+    }
+    &__numbers {
+      &::after {
+        background-size: contain;
+        width: 72px;
+        height: 77px;
+      }
+      &::before {
+        background-size: contain;
+        width: 92px;
+        height: 78px;
+      }
+    }
+
+    &__girl {
+      margin-right: 109px;
+
+      &::after {
+        background-size: contain;
+        width: 293px;
+        height: 232px;
+      }
+    }
+  }
+}
+
+/* ------ BUTTONS DESKTOP -------*/
+@media (min-width: 1200px) {
+  .buttontablet {
+    width: 160px;
+    margin-top: 38px;
+    right: 115px;
+    position: static;
+  }
+  .btn-container .button {
+    margin-top: 0;
+    display: none;
+    &--primary {
+      width: 104px;
+      height: 40px;
+    }
+    &--secondary {
+      width: 138px;
+      height: 40px;
+    }
+  }
+  .btn-div {
+    margin-left: 115px;
   }
 }

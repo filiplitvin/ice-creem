@@ -1,9 +1,15 @@
+.mobile-menu {
+  position: absolute;
+  top: 25px;
+  right: 18px;
+  z-index: 3;
+}
 .menu-btn {
   position: relative;
   display: block;
   z-index: 999;
-  width: 30px;
-  height: 30px;
+  width: 20px;
+  height: 12px;
   background: none;
 }
 
@@ -14,8 +20,9 @@
 .menu-btn::before,
 .menu-btn__line,
 .menu-btn::after {
-  width: 100%;
-  height: 2px;
+  width: 20px;
+  height: 1px;
+  stroke-width: 1px;
   background-color: $colorTextTitle;
   position: absolute;
   background-color: $colorTextTitle;
@@ -39,7 +46,7 @@
   &::before {
     top: calc(50% - 1px);
     transform: rotate(-45deg);
-    background-color: #fff; 
+    background-color: #fff;
   }
   .menu-btn__line {
     transform-origin: top;
@@ -48,11 +55,20 @@
   &::after {
     top: calc(50% - 1px);
     transform: rotate(45deg);
-    background-color: #fff; 
+    background-color: #fff;
   }
 }
-
-@media (min-width: 767px) {
+@media (min-width: 768px) {
+  .mobile-menu {
+    margin-top: 28px;
+    margin-right: 225px;
+  }
+}
+@media (min-width: 1200px) {
+  .mobile-menu {
+    margin-top: 0;
+    margin-right: 350px;
+  }
   .menu-btn {
     display: none;
   }

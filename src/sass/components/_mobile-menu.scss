@@ -1,4 +1,4 @@
-@media (max-width: 767px) {
+@media (max-width: 1200px) {
   .mobile-menu__wrapp {
     display: flex;
     flex-direction: column;
@@ -14,7 +14,7 @@
     transform: translateX(0);
   }
 }
-@media (min-width: 768px) {
+@media (min-width: 1200px) {
   .mobile-menu__wrapp {
     display: flex;
     justify-content: space-between;

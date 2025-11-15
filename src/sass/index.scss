@@ -1,9 +1,13 @@
-@import './utils/variables';
 @import './global/reset';
+@import './global/common';
 @import './global/base';
 @import './global/common';
-@import './components/container';
 @import './components/header';
 @import './components/mobile-menu';
 @import './components/menu-toggle';
 @import './components/nav';
+@import './utils/variables';
+@import './components/container';
+@import './components/products';
+@import './components/places';
+@import './components/made';

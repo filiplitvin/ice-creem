@@ -1,0 +1,133 @@
+.review__container {
+  margin-top: 80px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.image__container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 85px;
+  height: 85px;
+  margin-bottom: 72px;
+  margin: 0 auto 72px;
+}
+.review-text-container {
+  background-image: url(../images/“.svg);
+  background-position: top 29px left 61px;
+  background-size: 54px;
+  background-repeat: no-repeat;
+  width: 280px;
+  height: 308px;
+  background-color: #fafafa;
+}
+.review {
+  text-decoration: underline #e1e1e1;
+  position: relative;
+  font-family: 'DM Sans', sans-serif;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 255%;
+  text-align: center;
+  color: #000;
+  padding: 46px 63px 26px 57px;
+}
+.points {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-top: 56px;
+  margin-bottom: 18px;
+}
+.reviews__name {
+  font-family: 'DM Sans', sans-serif;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 37px;
+  text-align: center;
+  color: #000;
+}
+.change {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 18px;
+  margin-top: 30px;
+  margin-bottom: 86px;
+}
+@media (min-width: 768px) {
+  .review__container {
+    margin-top: 121px;
+  }
+
+  .image__container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 85px;
+    height: 85px;
+    margin-bottom: 49px;
+    margin: 0 auto 49px;
+  }
+  .review-text-container {
+    background-position: top 30px left 40px;
+    width: 620px;
+    height: 164px;
+  }
+  .review {
+    font-size: 14px;
+    padding-inline: 80px;
+    padding-top: 47px;
+    padding-bottom: 34px;
+  }
+  .points {
+    padding-top: 24px;
+    margin-top: 24px;
+    margin-bottom: 14px;
+  }
+  .reviews__name {
+    font-size: 16px;
+  }
+  .change {
+    margin-top: 35px;
+    margin-bottom: 119px;
+  }
+}
+@media (min-width: 1200px) {
+  .review__container {
+    margin-top: 121px;
+  }
+
+  .image__container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 85px;
+    height: 85px;
+    margin-bottom: 49px;
+    margin: 0 auto 49px;
+  }
+  .review-text-container {
+    background-position: top 32px left 50px;
+    width: 926px;
+    height: 138px;
+  }
+  .review {
+    font-size: 16px;
+    padding: 49px 87px 34px 89px;
+  }
+  .points {
+    padding-top: 52px;
+    margin-bottom: 14px;
+  }
+  .reviews__name {
+    font-size: 16px;
+  }
+  .change {
+    margin-top: 35px;
+    margin-bottom: 132px;
+  }
+}

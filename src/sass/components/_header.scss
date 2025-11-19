@@ -27,7 +27,7 @@
       content: '';
       position: absolute;
       top: 50%;
-      right: -20%;
+      right: -17%;
       transform: translateY(-50%);
       width: 346px;
       height: 344px;
@@ -84,41 +84,6 @@
     gap: 6px;
     position: relative;
     margin-top: 17px;
-  }
-
-  &__btn-tablet {
-    display: none;
-    border-radius: 22px;
-    cursor: pointer;
-    border: none;
-    color: $colorTextTitle;
-    font-family: $font-family;
-    font-weight: 700;
-    font-size: 16px;
-    text-align: center;
-    z-index: 2;
-    width: 209px;
-    height: 44px;
-    position: absolute;
-    transition: 0.25s ease;
-
-    &:hover {
-      transform: scale(1.04);
-      opacity: 0.9;
-    }
-
-    &::after {
-      content: '';
-      position: absolute;
-      right: 15px;
-      top: 50%;
-      transform: translateY(-50%);
-      width: 5px;
-      height: 6px;
-      background-image: url('../images/header/button-decor.png');
-      background-repeat: no-repeat;
-      background-size: contain;
-    }
   }
 
   &__milk {
@@ -220,77 +185,114 @@
   display: flex;
   justify-content: center;
   margin-top: 60px;
-}
-
-.btn-div {
-  display: flex;
-  z-index: 2;
-  gap: 6px;
-  position: relative;
-  margin-top: 17px;
+  margin-bottom: 20px;
 }
 .button {
   border-radius: 22px;
-  cursor: pointer;
-  border: none;
+  background-color: $colorTextPrimery;
   color: $colorTextTitle;
   font-family: $font-family;
   font-weight: 700;
   font-size: 16px;
   text-align: center;
-  z-index: 2;
   position: relative;
-  padding-right: 68px;
+  text-align: center;
+  padding: 10px 56px 10px 37px;
   height: 44px;
-  width: 160px;
-  transition: 0.25s ease;
-
-  &:hover {
-    transform: scale(1.04);
-    opacity: 0.9;
-  }
-
+  width: 209px;
+  cursor: pointer;
+  position: relative;
+  border-radius: 34px;
+  overflow: hidden;
+  transition-property: transform, opacity, box-shadow;
+  transition-duration: 0.25s;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   &::after {
     content: '';
     position: absolute;
     right: 15px;
-    top: 50%;
-    transform: translateY(-50%);
-    width: 5px;
-    height: 6px;
+    top: 40%;
+    width: 6px;
+    height: 10px;
     background-image: url('../images/header/button-decor.png');
     background-repeat: no-repeat;
     background-size: contain;
-    padding-right: 46px;
+    left: 75%;
   }
-
-  &--primary {
+  &::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    margin: auto;
+    width: 209px;
+    height: 60px;
+    border-radius: inherit;
+    scale: 0;
+    z-index: -1;
     background-color: $colorTextTitle;
-    color: #fff;
+    transition: all 0.6s cubic-bezier(0.23, 1, 0.32, 1);
+  }
+  &:hover::before {
+    scale: 3;
+  }
+  &:hover::after {
+    background-image: url('../images/made/strilka2.png');
+  }
+  &:hover {
+    color: $colorTextPrimery;
+    transform: scale(1.1);
+    opacity: 80%;
+    border: 2px solid $colorTextPrimery;
+    z-index: 1;
+  }
+  &:active {
+    scale: 1;
+  }
+  &--tablet {
+    z-index: 1;
+    position: absolute;
+    height: 44px;
+    width: 160px;
+    display: none;
+    margin-top: 38px;
+    right: 34px;
+    padding: 10px 25px 10px 25px;
+    &::before {
+      width: 100%;
+      height: 100%;
+    }
+    &:hover {
+      transform: none;
+    }
+  }
+  &--primary {
+    color: $colorTextPrimery;
+    background-color: $colorTextTitle;
     width: 62px;
     height: 24px;
     font-size: 8px;
     padding: 0;
 
-    &::before {
+    &::after {
       content: none;
-      background-image: none;
-      padding-right: initial;
+    }
+    &:before {
+      background-color: $colorTextPrimery;
+    }
+    &:hover {
+      color: $colorTextTitle;
+      border: 2px solid $colorTextTitle;
     }
   }
-
   &--secondary {
-    background-color: $colorTextPrimery;
-    color: $colorTextTitle;
     width: 82px;
     height: 24px;
     font-size: 8px;
     padding: 0;
+    margin: 0;
 
-    &::before {
-      background-image: none;
+    &::after {
       content: none;
-      padding-right: initial;
     }
   }
 }
@@ -319,20 +321,6 @@
     &__text-group {
       margin-top: 15px;
       margin-left: 34px;
-    }
-
-    &__btn-tablet {
-      display: block;
-      cursor: pointer;
-      width: 160px;
-      margin-top: 38px;
-      right: 34px;
-      transition: 0.25s ease;
-
-      &:hover {
-        transform: scale(1.04);
-        opacity: 0.9;
-      }
     }
 
     &__btn-group {
@@ -370,28 +358,23 @@
 }
 /* ------ BUTTONS TABLET ----------*/
 @media (min-width: 768px) {
-  .buttontablet {
-    display: block;
-    width: 160px;
-    margin-top: 38px;
-    right: 34px;
-  }
   .btn-div {
     margin-left: 34px;
   }
   .button {
     width: 186px;
+    &--tablet {
+      display: block;
+      width: 160px;
+    }
     &--primary {
       background-color: $colorTextTitle;
-      color: #fff;
       width: 62px;
-      height: 24px;
       font-size: 8px;
       padding: 0;
 
-      &::before {
+      &::after {
         content: none;
-        padding-right: initial;
       }
     }
 
@@ -399,13 +382,11 @@
       background-color: $colorTextPrimery;
       color: $colorTextTitle;
       width: 82px;
-      height: 24px;
       font-size: 8px;
       padding: 0;
 
-      &::before {
+      &::after {
         content: none;
-        padding-right: initial;
       }
     }
   }
@@ -479,19 +460,6 @@
       }
     }
 
-    &__btn-tablet {
-      width: 160px;
-      cursor: pointer;
-      margin-top: 38px;
-      right: 115px;
-      transition: 0.25s ease;
-
-      &:hover {
-        transform: scale(1.04);
-        opacity: 0.9;
-      }
-    }
-
     &__btn-group {
       margin-left: 115px;
     }
@@ -522,20 +490,22 @@
 
 /* ------ BUTTONS DESKTOP -------*/
 @media (min-width: 1200px) {
-  .buttontablet {
-    width: 160px;
-    margin-top: 38px;
-    right: 115px;
-    position: static;
-  }
-  .btn-container .button {
-    margin-top: 0;
+  .button {
     display: none;
+    &--tablet {
+      display: block;
+      margin-top: 38px;
+      right: 115px;
+    }
     &--primary {
+      display: block;
+      font-size: 14px;
       width: 104px;
       height: 40px;
     }
     &--secondary {
+      display: block;
+      font-size: 14px;
       width: 138px;
       height: 40px;
     }

@@ -9,7 +9,9 @@
         <span class="menu-btn__line"></span>
       </button>
       <div class="mobile-menu__wrapp" data-menu>
-        <div class="btn-container"><button class="button">Buy now</button></div>
+        <div class="btn-container">
+          <button class="button" data-modal-open>Buy now</button>
+        </div>
         <nav class="nav">
           <ul class="nav__list">
             <li class="nav__item">
@@ -31,9 +33,67 @@
         </nav>
       </div>
     </div>
-
-    <button class="header__btn-tablet">Buy now</button>
-
+    <button class="button button--tablet" data-modal-open>Buy now</button>
+    <!-- Модальне вікно -->
+    <div class="backdrop is-hidden" data-modal>
+      <div class="modal">
+        <h2 class="modal__title">Leave your details, we will call you back</h2>
+        <div class="modal__close">
+          <svg class="modal__cross" width="18px" height="18px" data-modal-close>
+            <use href="./images/header/icons/symboldefs.svg#icon-cross"></use>
+          </svg>
+        </div>
+        <form action="" class="form">
+          <label for="" class="form__label">
+            Name
+            <input type="text" class="form__input" />
+            <svg class="form__icon" width="18px" height="18px">
+              <use
+                href="./images/header/icons//symboldefs.svg#icon-person"
+              ></use>
+            </svg>
+          </label>
+          <label for="" class="form__label">
+            Phone
+            <input type="tel" class="form__input" />
+            <svg class="form__icon" width="18px" height="18px">
+              <use href="./images/header/icons/symboldefs.svg#icon-phone"></use>
+            </svg>
+          </label>
+          <label for="" class="form__label">
+            Email
+            <input type="email" class="form__input" />
+            <svg class="form__icon" width="18px" height="18px">
+              <use href="./images/header/icons/symboldefs.svg#icon-email"></use>
+            </svg>
+          </label>
+          <label for="" class="form__label">
+            Comment
+            <textarea
+              name=""
+              id=""
+              placeholder="Enter the text"
+              class="form__comment"
+            ></textarea>
+          </label>
+          <div class="access">
+            <label for="" class="access__label">
+              <input
+                type="checkbox"
+                width="16px"
+                height="15px"
+                class="access__checkbox"
+              />
+            </label>
+            <span class="access__text"
+              >I agree to the newsletter and accept</span
+            >
+            <a href="#" class="access__link">Terms of the contract</a>
+          </div>
+        </form>
+        <button type="button" data-modal-close class="button-send">Send</button>
+      </div>
+    </div>
     <div class="header__text-group">
       <h3 class="header__subtitle">ice cream</h3>
       <h3 class="header__subtitle">made with</h3>

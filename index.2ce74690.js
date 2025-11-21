@@ -1,2 +1,0 @@
-const e=document.querySelector("[data-menu]"),o=document.querySelector("[data-menu-btn]");document.querySelectorAll("[data-mobile-link]").forEach((s=>{s.addEventListener("click",(()=>{e.classList.remove("is-open"),o.classList.remove("is-open"),document.body.classList.remove("no__scroll")}))})),o.addEventListener("click",(()=>{e.classList.toggle("is-open"),o.classList.toggle("is-open"),document.body.classList.toggle("no__scroll")}));
-//# sourceMappingURL=index.2ce74690.js.map

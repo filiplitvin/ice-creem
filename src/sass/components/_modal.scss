@@ -1,0 +1,65 @@
+.backdrop {
+  position: fixed;
+  background-color: rgba(0, 0, 0, 0.2);
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  transition-duration: 250ms;
+}
+.backdrop.is-hidden {
+  opacity: 0;
+  pointer-events: none;
+}
+.backdrop.is-hidden .modal {
+  transform: translate(50%, -20%);
+}
+.modal {
+  background-color: $colorBgPrimary;
+  position: absolute;
+  max-height: 600px;
+  max-width: 300px;
+  top: 50%;
+  left: 50%;
+  transform: translateX(-50%) translateY(-50%);
+  padding-left: 40px;
+  padding-right: 40px;
+  border-radius: 10px;
+  box-shadow: 0px 2px 4px 0px $colorTextSubTitle;
+  transition-property: transform;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  &:hover {
+    box-shadow: 0px 3px 5px 0px $colorTextSubTitle;
+  }
+}
+.modal__list {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.modal__close {
+  padding: 10px 20px;
+  border-radius: 10px;
+  background-color: $colorTextTitle;
+  color: $colorCardPrimery;
+  cursor: pointer;
+  box-shadow: 0px 1px 2px 0px black;
+  margin-bottom: 20px;
+  &:hover {
+    box-shadow: 1px 2px 3px 1px black;
+  }
+}
+.modal__info {
+  border-radius: 10px;
+  padding: 10px;
+}
+.no-scroll {
+  overflow: hidden;
+}
+@media (min-width: 1200px) {
+  .modal {
+    max-width: 528px;
+    max-height: 581px;
+  }
+}

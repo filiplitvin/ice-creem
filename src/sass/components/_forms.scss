@@ -1,5 +1,5 @@
 /* modal */
-.modal {
+.modal1 {
   position: absolute;
   top: 50%;
   left: 50%;
@@ -30,7 +30,7 @@
   &__cross:hover {
     fill: $colorTextTitle;
   }
-  &__close {
+  &__close1 {
     position: absolute;
     top: 14px;
     right: 10px;
@@ -194,7 +194,7 @@
   background-color: rgba(0, 0, 0, 0.2);
   z-index: 9999;
 }
-.backdrop.is-hidden {
+.backdrop .is-hidden {
   opacity: 0;
   pointer-events: none;
 }

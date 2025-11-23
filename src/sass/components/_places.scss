@@ -25,6 +25,7 @@
   transition-property: box-shadow;
   transition-duration: 250ms;
   transition-timing-function: ease;
+  cursor: pointer;
   &:hover {
     box-shadow: 1px 5px 5px 1px #00000025;
   }
@@ -144,8 +145,8 @@
   position: absolute;
   inset: 0;
   margin: auto;
-  width: 60px;
-  height: 60px;
+  width: 70px;
+  height: 70px;
   border-radius: inherit;
   scale: 0;
   z-index: -1;

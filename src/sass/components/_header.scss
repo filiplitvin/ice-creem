@@ -57,6 +57,7 @@
     align-items: flex-start;
     margin-top: 137px;
     z-index: 2;
+    line-height: normal;
   }
 
   &__subtitle {
@@ -414,6 +415,8 @@
     &__logo {
       margin-top: 37px;
       margin-left: 46px;
+
+      filter: drop-shadow(0 4px 8px rgba(0, 0, 0, 0.5));
     }
 
     &__text-group {
@@ -433,6 +436,7 @@
       left: 77px;
 
       &::before {
+        background-image: url(../images/header/milk-desktop.png);
         background-size: contain;
         width: 188px;
         height: 191px;
@@ -465,14 +469,18 @@
     }
     &__numbers {
       &::after {
+        top: 156px;
+        background-image: url(../images/header/16-desktop.png);
         background-size: contain;
         width: 72px;
         height: 77px;
       }
       &::before {
+        background-image: url(../images/header/23-desktop.png);
         background-size: contain;
         width: 92px;
         height: 78px;
+        top: 248px;
       }
     }
 
@@ -480,6 +488,7 @@
       margin-right: 109px;
 
       &::after {
+        background-image: url(../images/header/girl-desktop.png);
         background-size: contain;
         width: 293px;
         height: 232px;
@@ -513,4 +522,30 @@
   .btn-div {
     margin-left: 115px;
   }
+}
+.scroll-to-top-button {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  z-index: 99;
+  width: 50px;
+  height: 50px;
+  background-color: $colorTextPrimery;
+  color: $colorTextTitle;
+  border: none;
+  border-radius: 50%;
+  cursor: pointer;
+  font-size: 24px;
+  line-height: 50px;
+  text-align: center;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+  overflow: hidden;
+  transition-property: transform, opacity, box-shadow;
+  transition-duration: 0.25s;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.scroll-to-top-button:hover {
+  background-color: $colorTextTitle;
+  color: $colorTextPrimery;
 }

@@ -60,6 +60,7 @@
   align-items: center;
   flex-wrap: wrap;
   gap: 130px;
+  padding-bottom: 98px;
 }
 
 .list-item {
@@ -289,6 +290,7 @@
   }
   .products__list {
     gap: 20px;
+    padding-bottom: 112px;
   }
   .list-item {
     flex-basis: calc((100% - 60px) / 3);
@@ -343,6 +345,7 @@
   }
   .products__list {
     gap: 27px;
+    padding-bottom: 119px;
   }
   .list-item {
     min-width: 335px;

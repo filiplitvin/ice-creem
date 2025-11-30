@@ -1,4 +1,4 @@
-<header class="header">
+<header id="home" class="header">
   <div class="container header__container">
     <a href="./" class="header__logo">
       <img src="./images/header/logo.png" alt="logo" class="header__logo-img" />
@@ -18,16 +18,20 @@
               <a href="./" data-mobile-link class="nav__link">Home</a>
             </li>
             <li class="nav__item">
-              <a href="./" data-mobile-link class="nav__link">About us</a>
+              <a href="#places" data-mobile-link class="nav__link">About us</a>
             </li>
             <li class="nav__item">
-              <a href="./" data-mobile-link class="nav__link">How it’s made?</a>
+              <a href="#made" data-mobile-link class="nav__link"
+                >How it’s made?</a
+              >
             </li>
             <li class="nav__item">
-              <a href="./" data-mobile-link class="nav__link">Our products</a>
+              <a href="#products" data-mobile-link class="nav__link"
+                >Our products</a
+              >
             </li>
             <li class="nav__item">
-              <a href="./" data-mobile-link class="nav__link">Contact</a>
+              <a href="#contact" data-mobile-link class="nav__link">Contact</a>
             </li>
           </ul>
         </nav>
@@ -36,7 +40,14 @@
     <button class="button button--tablet" data-form-open>Buy now</button>
     <!-- Модальне вікно -->
     <div class="backdrop is-hidden" data-form>
-      <div class="modal1">
+      <div class="modal1" id="modal">
+        <div class="snow">
+          <span></span><span></span><span></span><span></span><span></span>
+          <span></span><span></span><span></span><span></span><span></span>
+          <span></span><span></span><span></span><span></span><span></span>
+          <span></span><span></span><span></span><span></span><span></span>
+        </div>
+
         <h2 class="modal1__title">Leave your details, we will call you back</h2>
         <div class="modal1__close1">
           <svg class="modal1__cross" width="18px" height="18px" data-form-close>
@@ -125,3 +136,4 @@ incididunt ut labore et
     <div class="header__girl" data-aos="fade-up-left"></div>
   </div>
 </header>
+<a href="#home" class="scroll-to-top-button"> ↑ </a>

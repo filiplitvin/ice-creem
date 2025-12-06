@@ -1,11 +1,13 @@
 const swiper = new Swiper('.swiper', {
   // Параметри
-  effect: 'fade', //інші ефекти: "slide", "fade", "cube", "coverflow", "flip", "cards"
+  effect: 'slide', // інші ефекти: "slide", "fade", "cube", "coverflow", "flip", "cards"
   loop: true,
-  //   Кількість слайдів на екрані
+
+  // Кількість слайдів на екрані
   slidesPerView: 1,
-  //   Активний слайд в центрі
-  centeredSlides: true,
+
+  // Активний слайд в центрі
+  // centeredSlides: true, // Видалити, якщо не потрібно
 
   // Якщо потрібна пагінація
   pagination: {

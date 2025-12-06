@@ -28,15 +28,12 @@
   height: 85px;
   margin-bottom: 72px;
   margin: 0 auto 72px;
-  padding-top: 382px;
 }
 .review-text-container {
   background-image: url(../images/“.svg);
   background-position: top 29px left 61px;
   background-size: 54px;
   background-repeat: no-repeat;
-  width: 280px;
-  height: 308px;
   background-color: #fafafa;
   display: flex;
   align-items: center;
@@ -70,6 +67,9 @@
   justify-content: center;
   align-items: center;
 }
+.swiper-carusel__container {
+  width: 100%;
+}
 .review {
   display: flex;
   justify-content: center;
@@ -99,8 +99,6 @@
   }
   .review-text-container {
     background-position: top 30px left 40px;
-    width: 620px;
-    height: 164px;
   }
   .review {
     font-size: 14px;
@@ -133,11 +131,10 @@
     height: 85px;
     margin-bottom: 49px;
     margin: 0 auto 49px;
+    padding-top: 389px;
   }
   .review-text-container {
     background-position: top 32px left 50px;
-    width: 926px;
-    height: 138px;
   }
   .review {
     font-size: 16px;

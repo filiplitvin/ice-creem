@@ -1,0 +1,18 @@
+const swiper = new Swiper('.swiper', {
+  // Параметри
+  effect: 'slide', // інші ефекти: "slide", "fade", "cube", "coverflow", "flip", "cards"
+  loop: true,
+
+  // Кількість слайдів на екрані
+  slidesPerView: 1,
+
+  // Активний слайд в центрі
+  // centeredSlides: true, // Видалити, якщо не потрібно
+
+  // Якщо потрібна пагінація
+  pagination: {
+    el: '.swiper-pagination',
+    type: 'bullets', // default, інші варіанти: "fraction", "progressbar", "custom"
+    clickable: true, // щоб можна було клікати по крапках пагінації
+  },
+});

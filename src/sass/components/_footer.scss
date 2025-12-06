@@ -15,17 +15,19 @@
 
 .footer__subtitle {
   color: $colorTextSubTitle;
-  font-weight: 700;
-  font-size: 18px;
+  font-weight: 400;
+  font-size: 30px;
   margin-bottom: 12px;
+  font-family: $second-family;
 }
 
 .footer__title {
   color: $colorTextTitle;
-  font-size: 42px;
-  font-weight: 800;
+  font-size: 58px;
+  font-weight: 400;
   margin-bottom: 24px;
   line-height: 1.1;
+  font-family: $second-family;
 }
 
 .footer__socials {
@@ -41,7 +43,6 @@
   width: 42px;
   height: 42px;
   border-radius: 50%;
-  background: $colorTextSubTitle;
   display: flex;
   justify-content: center;
   align-items: center;

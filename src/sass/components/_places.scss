@@ -315,6 +315,10 @@
   .places__grafic::after {
     width: 243px;
   }
+  .places__contacts {
+    display: flex;
+    flex-direction: column;
+  }
   .location {
     padding-left: 35px;
     padding-right: 35px;

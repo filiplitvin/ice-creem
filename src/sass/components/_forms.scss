@@ -3,10 +3,9 @@
   position: fixed;
   top: 50%;
   left: 50%;
-
   box-shadow: 0 2px 1px 0 rgba(0, 0, 0, 0.2), 0 1px 1px 0 rgba(0, 0, 0, 0.14),
     0 1px 3px 0 rgba(0, 0, 0, 0.12);
-  width: 450px;
+  width: 90%;
   height: 609px;
   background-color: #ffffff;
 
@@ -14,7 +13,7 @@
   transform: translate(-50%, -50%);
   padding: 40px;
 
-  @media screen and (min-width: 1200px) {
+  @media (min-width: 768px) {
     width: 528px;
     height: 581px;
   }
@@ -134,11 +133,13 @@
     }
   }
 }
+
 .button-send {
   width: 200px;
   padding: 10px 52px;
-  margin-left: 85px;
-  margin-right: 85px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
   background-color: $colorTextTitle;
   color: $colorTextPrimery;
   font-family: $font-family;
@@ -199,36 +200,67 @@
   opacity: 0;
   pointer-events: none;
 }
-.snow{
-  position:absolute;
-  inset:0;
-  pointer-events:none;
+.snow {
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
 }
 
-
-.snow span{
-  position:absolute;
-  top:-10px;
-  width:6px;
-  height:6px;
+.snow span {
+  position: absolute;
+  top: -10px;
+  width: 6px;
+  height: 6px;
   background: $colorTextSubTitle;
-  border-radius:50%;
-  animation:snow 4s linear infinite;
-  opacity:.8;
+  border-radius: 50%;
+  animation: snow 4s linear infinite;
+  opacity: 0.8;
 }
 
-.snow span:nth-child(10){left:5%; animation-delay:1.8s;}
-.snow span:nth-child(11){left:15%; animation-delay:.4s;}
-.snow span:nth-child(12){left:25%; animation-delay:2.2s;}
-.snow span:nth-child(13){left:35%; animation-delay:1.1s;}
-.snow span:nth-child(14){left:45%; animation-delay:2.8s;}
-.snow span:nth-child(15){left:55%; animation-delay:.9s;}
-.snow span:nth-child(16){left:65%; animation-delay:1.9s;}
-.snow span:nth-child(17){left:75%; animation-delay:.6s;}
-.snow span:nth-child(18){left:85%; animation-delay:2.4s;}
-.snow span:nth-child(19){left:95%; animation-delay:1.4s;}
-.snow span:nth-child(20){left:50%; animation-delay:3s;}
-
+.snow span:nth-child(10) {
+  left: 5%;
+  animation-delay: 1.8s;
+}
+.snow span:nth-child(11) {
+  left: 15%;
+  animation-delay: 0.4s;
+}
+.snow span:nth-child(12) {
+  left: 25%;
+  animation-delay: 2.2s;
+}
+.snow span:nth-child(13) {
+  left: 35%;
+  animation-delay: 1.1s;
+}
+.snow span:nth-child(14) {
+  left: 45%;
+  animation-delay: 2.8s;
+}
+.snow span:nth-child(15) {
+  left: 55%;
+  animation-delay: 0.9s;
+}
+.snow span:nth-child(16) {
+  left: 65%;
+  animation-delay: 1.9s;
+}
+.snow span:nth-child(17) {
+  left: 75%;
+  animation-delay: 0.6s;
+}
+.snow span:nth-child(18) {
+  left: 85%;
+  animation-delay: 2.4s;
+}
+.snow span:nth-child(19) {
+  left: 95%;
+  animation-delay: 1.4s;
+}
+.snow span:nth-child(20) {
+  left: 50%;
+  animation-delay: 3s;
+}
 
 @keyframes snow {
   from {
